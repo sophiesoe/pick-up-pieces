@@ -70,6 +70,10 @@ window.addEventListener("load", () => {
         this.mouse.x = e.x;
         this.mouse.y = e.y;
       });
+      window.addEventListener("touchmove", (e) => {
+        this.mouse.x = e.x;
+        this.mouse.y = e.y;
+      });
     }
     init(context) {
       context.drawImage(this.image, this.x, this.y);
