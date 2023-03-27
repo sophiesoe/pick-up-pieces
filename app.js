@@ -3,7 +3,6 @@ window.addEventListener("load", () => {
   const ctx = c.getContext("2d");
   c.width = window.innerWidth;
   c.height = window.innerHeight;
-  const image = document.getElementById("img1");
 
   class Particle {
     constructor(effect, x, y, color) {
@@ -67,10 +66,6 @@ window.addEventListener("load", () => {
         radius: 3000,
       };
       window.addEventListener("mousemove", (e) => {
-        this.mouse.x = e.x;
-        this.mouse.y = e.y;
-      });
-      window.addEventListener("touchmove", (e) => {
         this.mouse.x = e.x;
         this.mouse.y = e.y;
       });
